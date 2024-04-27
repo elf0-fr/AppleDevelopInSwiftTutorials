@@ -12,7 +12,9 @@ import SwiftData
 struct AppleDevelopInSwiftTutorialsApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Pal.self,
+            Movie.self,
+            Friend.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -22,7 +24,7 @@ struct AppleDevelopInSwiftTutorialsApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
-
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
