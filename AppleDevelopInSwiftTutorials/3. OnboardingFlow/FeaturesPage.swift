@@ -32,7 +32,7 @@ struct FeaturesPage: View {
             )
             
             FeatureCard(
-                iconName: "person.3",
+                iconName: "person.3.fill",
                 description: "Pick a random friend"
             )
             

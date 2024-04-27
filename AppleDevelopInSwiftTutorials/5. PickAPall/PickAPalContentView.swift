@@ -52,7 +52,7 @@ struct PickAPalContentView: View {
             }
             .searchable(text: $nameToAdd, prompt: "Add an item") {
                 ForEach(searchResults, id: \.self) { result in
-                    Text("Pick \(result)")
+                    Text("Add \(result)")
                         .searchCompletion(result)
                 }
             }
@@ -154,7 +154,7 @@ struct PickAPalHeader: View {
                 .frame(maxHeight: 40)
                 .foregroundStyle(.tint)
                 .symbolRenderingMode(.hierarchical)
-            Text("Pick-a-pall")
+            Text("Pick-a-pal")
 //                .foregroundStyle(.white)
         }
         .font(.largeTitle.lowercaseSmallCaps())
