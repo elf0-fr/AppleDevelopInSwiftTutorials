@@ -25,10 +25,10 @@ struct ContentView: View {
                         }
                     
                     NavigationStack {
-                        PickAPallContentView()                        
+                        PickAPalContentView()                        
                     }
                         .tabItem {
-                            Label("Dice Roller", systemImage: "person.3")
+                            Label("Pick A Pal", systemImage: "person.3")
                         }
                     
                     DiceRollerContentView()

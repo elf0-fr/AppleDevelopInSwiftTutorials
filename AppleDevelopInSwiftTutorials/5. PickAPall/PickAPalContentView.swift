@@ -1,5 +1,5 @@
 //
-//  PickAPallContentView.swift
+//  PickAPalContentView.swift
 //  AppleDevelopInSwiftTutorials
 //
 //  Created by Elfo on 07/04/2024.
@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-struct PickAPallContentView: View {
+struct PickAPalContentView: View {
     @Query(sort: \Pal.name) private var pals: [Pal]
     @Query private var friends: [Friend]
     @Environment(\.modelContext) var modelContext
@@ -133,14 +133,14 @@ struct PickAPallContentView: View {
 
 #Preview {
     NavigationStack {
-        PickAPallContentView()
+        PickAPalContentView()
             .modelContainer(SampleData.shared.modelContainer)
     }
 }
 
 #Preview("No Model") {
     NavigationStack {
-        PickAPallContentView()
+        PickAPalContentView()
             .modelContainer(for: models, inMemory: true)
     }
 }
