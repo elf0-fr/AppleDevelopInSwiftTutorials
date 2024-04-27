@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DiceRollerContentView: View {
     @State private var numberOfDice: Int = 1
-    @State private var pips = Array(repeating: 1, count: 5)
+    @State private var pips = Array(repeating: 1, count: 6)
     
     var body: some View {
         VStack {
