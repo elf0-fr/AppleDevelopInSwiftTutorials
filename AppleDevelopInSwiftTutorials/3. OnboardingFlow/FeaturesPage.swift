@@ -32,8 +32,8 @@ struct FeaturesPage: View {
             )
             
             FeatureCard(
-                iconName: "dice.fill",
-                description: "Play board game with dice"
+                iconName: "person.3",
+                description: "Pick a random friend"
             )
             
             Spacer()
